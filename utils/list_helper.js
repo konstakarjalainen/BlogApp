@@ -33,7 +33,6 @@ const _ = require('lodash')
 
 const mostBlogs = (blogs) => {
   const blogCounter = _.countBy(blogs,'author')
-  console.log('counter', blogCounter)
   const mostBlogsName = _.maxBy(_.keys(blogCounter), name => blogCounter[name])
   return {
     author: mostBlogsName,
@@ -43,7 +42,6 @@ const mostBlogs = (blogs) => {
 
 const mostLikes = (blogs) => {
   const blogsGrouped = _.groupBy(blogs,'author')
-  console.log('counter', blogsGrouped)
   const mostLikesName = _.maxBy(_.keys(blogsGrouped), name => _.sumBy(blogsGrouped[name], 'likes'))
   const summedLikes = _.sumBy(blogsGrouped[mostLikesName], 'likes')
   return blogs.length === 0 
