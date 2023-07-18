@@ -8,6 +8,7 @@ const usersRouter = require('./controllers/users')
 const middleware = require('./utils/middleware')
 const logger = require('./utils/logger')
 const mongoose = require('mongoose')
+const usersRouter = require('./controllers/users')
 
 mongoose.set('strictQuery', false)
 
