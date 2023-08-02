@@ -1,10 +1,10 @@
 POST http://localhost:3003/api/blogs 
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzZCIsImlkIjoiNjRiZmY5NGI3NjA0OGJhM2NmOTE5ZTA5IiwiaWF0IjoxNjkwMzAzMDQ5LCJleHAiOjE2OTAzMDY2NDl9.2MIkl5hxFzdNThlbxJtx7VK0P5zpUE2LjTUsF-3wbl8
 
 {
-"title": "asd", 
-"author": "John Doe",
-"url": "asd",
-"likes": 1,
-"userId": "64b05275cb8216683d09ebc8"
+  "title": "sing", 
+  "author": "John Doe",
+  "url": "sing",
+  "likes": 1
 }
